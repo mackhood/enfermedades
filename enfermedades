@@ -1,0 +1,46 @@
+class EnfermedadesInfecciosas {
+
+var celulasInfectadas
+var tiempo
+
+constructor (1celulasInfectadas,1tiempo) {
+tiempo=1tiempo
+celulasInfectadas=1celulasInfectadas
+}
+
+method efecto(unaPersona) {
+
+unaPersona.modificarTemperatura(celulasInfectadas/1000)
+}
+
+
+method esAgresiva(unaPersona) {
+return unaPersona.celulas() < (0.1 *celulasInfectadas)
+}
+
+method reproducir () {
+ 
+celulasInfectadas = celulasInfectadas *2
+ }
+ 
+ }
+ 
+ class EnfermedadesAutoinmunes {
+ 
+var celulasInfectadas
+var tiempo
+
+constructor (1celulasInfectadas,1tiempo) {
+tiempo=1tiempo
+celulasInfectadas=1celulasInfectadas
+}
+
+method efecto(unaPersona) {
+
+unaPersona.modificarCelulas(celulasInfectadas)
+}
+
+method esAgresiva(unaPersona) {
+return tiempo> 30
+}
+
