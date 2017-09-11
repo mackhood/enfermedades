@@ -1,0 +1,30 @@
+class Persona {
+
+var tiempo
+var celulas
+var enfermedades=#{}
+var temperatura
+	constructor(unTiempo, unCelulas,unaTemperatura){
+		tiempo=unTiempo
+		celulas=unCelulas
+		temperatura=unaTemperatura
+	} 
+
+
+	method contraerEnfermedad(unaEnfermedad){
+		enfermedades.add(unaEnfermedad)
+	}
+	method pasarTiempo(unTiempo){
+	tiempo += unTiempo
+	enfermedades.forEach({unaEnfermedad => (unaEnfermedad.tiempo() = unaEnfermedad.tiempo()+ unTiempo})	
+	}
+	
+	method modificarTemperatura(unaTemperatura){
+	temperatura += unaTemperatura	
+	}
+	
+	method modificarCelulas (unasCelulas){
+		celulas +=unasCelulas
+	}
+	
+}
