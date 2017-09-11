@@ -18,10 +18,10 @@ var temperatura
 	tiempo += unTiempo
 	enfermedades.forEach({unaEnfermedad => (unaEnfermedad.tiempo() = unaEnfermedad.tiempo()+ unTiempo})	
 	}
-	
 	method modificarTemperatura(unaTemperatura){
-	temperatura += unaTemperatura	
-	}
+	if ((temperatura + unaTemperatura)<=45){ temperatura += unaTemperatura
+	}}
+
 	
 	method modificarCelulas (unasCelulas){
 		celulas +=unasCelulas
